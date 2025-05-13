@@ -38,13 +38,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        iterativeBinarySearch(, 987654);
+        int[] A = new int[1_000_000];
+        for (int i = 0; i < A.length; i++) {
+            A[i] = i;
+        }
 
-        recursiveBinarySearch(, 987654);
+        iterativeBinarySearch(A, 987654);
+
+        recursiveBinarySearch(A, 0, A.length -1, 987654);
     }
-
-
-
-
-
 }
