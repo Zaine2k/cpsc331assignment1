@@ -4,9 +4,8 @@ public class Main {
         int i = 0;
         int j = A.length - 1;
 
-        while (i <= j) {
+        do {
             int m = (i + j) / 2;
-
             if (A[m] == x) {
                 return m;
             } else if (A[m] < x) {
@@ -14,7 +13,7 @@ public class Main {
             } else {
                 j = m - 1;
             }
-        }
+        } while (i <= j);
         // Return -1 if the element is not found
         return -1;
     }
